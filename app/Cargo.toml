@@ -1,0 +1,16 @@
+[package]
+name = "neutron-leptos"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+leptos = { workspace = true }
+neutron-leptos = { path = "../library" }
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.leptos]
+output-name = "neutron_leptos"
+site-root = "site/dist"
+site-pkg-dir = "site/dist/pkg"

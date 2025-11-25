@@ -1,0 +1,9 @@
+[workspace]
+dependencies = { leptos = "0.6" }
+package = { edition = "2024" }
+members = [
+  "library",
+  "app"
+]
+
+resolver = "2"
